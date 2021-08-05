@@ -1,0 +1,862 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+html {
+    font-family: "Jua", sans-serif;
+}
+
+/* 노말라이즈 */
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #ff7e36;
+    color: #fff;
+}
+
+body,
+ul,
+li,
+h1 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+div {
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* header */
+header {
+    background: #fff;
+    color: #212529;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header .hd_box {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    padding: 30px 40px;
+    padding-bottom: 0;
+    margin: 0 auto;
+}
+
+header .hd_box h1.logo {
+    display: block;
+    width: 100%;
+}
+
+header .hd_box h1.logo>a {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+header .hd_box h1.logo>a>img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header .hd_box .hd_tit {
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+}
+
+header .hd_box .hd_tit>h2 {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+header .hd_box .search-container {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header .hd_box .search-container>input {
+    font-family: "Jua", sans-serif;
+    background: #fff;
+    box-sizing: border-box;
+    border: 5px solid #ff7e36;
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    color: #111;
+    cursor: pointer;
+    font-size: 1.6em;
+    transition: width 1s ease;
+}
+
+header .hd_box .search-container>input::placeholder {
+    color: #ffb98b;
+}
+
+header .hd_box .search-container>input:focus {
+    outline: none;
+}
+
+header .hd_box .search-container>i {
+    color: #ff7e36;
+    padding-top: 10px;
+    width: 60px;
+    height: 48px;
+    border-radius: 50%;
+    margin: 0 0 0 0;
+    position: absolute;
+    cursor: pointer;
+    margin-left: -5px;
+    font-size: 30px;
+}
+
+header .hd_box .search-container>p {
+    color: #ff7e36;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    text-align: left;
+    margin-left: 200px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.search-container:before {
+    content: "";
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #ff7e36;
+    position: absolute;
+    top: 1.2px;
+    margin-left: 1.2px;
+    animation: grow 1s 3;
+}
+
+@keyframes grow {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* contents */
+.contents {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 350px 40px 0;
+}
+
+.contents .cont_box {
+    position: relative;
+}
+
+.contents .cont_box section.cont_main {
+    margin-bottom: 180px;
+}
+
+.contents .cont_box section.cont_main .main_box {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.contents .cont_box section.cont_main .main_box_mb {
+    display: none;
+}
+
+.contents .cont_box section.cont_main .main_box .main_item {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    padding: 40px;
+    margin: 0;
+    width: 33.3333%;
+    min-height: 600px;
+    transition: cubic-bezier(0.77, 0.22, 0.18, 1) 0.4s;
+}
+
+.contents .cont_box section.cont_main .main_box .main_item:first-child {
+    background: url(https://chaeyeon3241.github.io/carrot_img/main_01.png) no-repeat center center;
+    background-size: cover;
+    left: 0;
+    z-index: 0;
+}
+
+.contents .cont_box section.cont_main .main_box .main_item:nth-child(2) {
+    background: url(https://chaeyeon3241.github.io/carrot_img/main_02.png) no-repeat center center;
+    background-size: cover;
+    left: 16.6667%;
+    z-index: 1;
+}
+
+.contents .cont_box section.cont_main .main_box .main_item:nth-child(3) {
+    background: url(https://chaeyeon3241.github.io/carrot_img/main_03.png) no-repeat center center;
+    background-size: cover;
+    left: 33.3333%;
+    z-index: 2;
+}
+
+.contents .cont_box section.cont_main .main_box .main_item:nth-child(4) {
+    background: url(https://chaeyeon3241.github.io/carrot_img/main_04.png) no-repeat center center;
+    background-size: cover;
+    left: 50%;
+    z-index: 3;
+}
+
+.contents .cont_box section.cont_main .main_box .main_item:nth-child(5) {
+    background: url(https://chaeyeon3241.github.io/carrot_img/main_05.png) no-repeat center center;
+    background-size: cover;
+    left: 66.6666%;
+    z-index: 4;
+}
+
+.contents .cont_box section.cont_main .main_box .main_item:nth-child(6) {
+    background: url(https://chaeyeon3241.github.io/carrot_img/main_06.png) no-repeat center center;
+    background-size: cover;
+    left: 83.3333%;
+    z-index: 5;
+}
+
+.contents .cont_box section.cont_main .main_box .main_item:before {
+    content: "";
+    width: 10px;
+    height: 100%;
+    background-color: #ff7e36;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contents .cont_box section.cont_main .main_box .main_item:first-child:before {
+    display: none;
+}
+
+.contents .cont_box section.cont_main .main_box .main_item>.item_tit {
+    display: block;
+}
+
+.contents .cont_box section.cont_main .main_box .main_item>.item_tit>h3 {
+    color: #d34c00;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.contents .cont_box section.cont_main .main_box .main_item .item_list {
+    display: block;
+}
+
+.contents .cont_box section.cont_main .main_box .main_item .item_list .item_box {
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.contents .cont_box section.cont_main .main_box .main_item .item_list .item_box>ul>li {
+    width: 50%;
+    max-width: 200px;
+    min-height: 48px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    transition: cubic-bezier(0.77, 0.02, 0.18, 1) 0.4s;
+    opacity: 0;
+}
+
+.contents .cont_box section.cont_main .main_box .main_item .item_list .item_box>ul>li>a {
+    display: block;
+    width: 100%;
+    height: 48px;
+}
+
+.contents .cont_box section.cont_main .main_box .main_item .item_list .item_box>ul>li>a>img {
+    width: 200px;
+    height: 48px;
+}
+
+.contents .cont_box section.cont_main .main_box.on .main_item.active .item_list .item_box>ul>li {
+    width: 100%;
+    opacity: 1;
+}
+
+/* contents-mobile*/
+.contents .cont_box section.cont_main .main_box_mb {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+}
+
+.contents .cont_box section.cont_main .main_box_mb>.main_item {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.contents .cont_box section.cont_main .main_box_mb>.main_item.main_01 {
+    background: url(https://chaeyeon3241.github.io/carrot_img/mb_01.png)no-repeat center;
+    background-size: cover;
+}
+
+.contents .cont_box section.cont_main .main_box_mb>.main_item.main_02 {
+    background: url(https://chaeyeon3241.github.io/carrot_img/mb_02.png)no-repeat center;
+    background-size: cover;
+}
+
+.contents .cont_box section.cont_main .main_box_mb>.main_item.main_03 {
+    background: url(https://chaeyeon3241.github.io/carrot_img/mb_03.png)no-repeat center;
+    background-size: cover;
+}
+
+.contents .cont_box section.cont_main .main_box_mb>.main_item.main_04 {
+    background: url(https://chaeyeon3241.github.io/carrot_img/mb_04.png)no-repeat center;
+    background-size: cover;
+}
+
+.contents .cont_box section.cont_main .main_box_mb>.main_item.main_05 {
+    background: url(https://chaeyeon3241.github.io/carrot_img/mb_05.png)no-repeat center;
+    background-size: cover;
+}
+
+.contents .cont_box section.cont_main .main_box_mb>.main_item.main_06 {
+    background: url(https://chaeyeon3241.github.io/carrot_img/mb_06.png)no-repeat center;
+    background-size: cover;
+}
+
+.contents .cont_box section.cont_main .main_box_mb>.main_item .item_tit {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-left: 10px;
+}
+
+.contents .cont_box section.cont_main .main_box_mb>.main_item .item_tit>h3 {
+    display: block;
+    color: #d34c00;
+    font-size: 30px;
+    font-weight: 400;
+
+}
+
+.contents .cont_box section.cont_main .main_box_mb>.main_item .item_list {
+    display: inline-block;
+    float: right;
+    width: 200px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.contents .cont_box section.cont_main .main_box_mb>.main_item .item_list .item_box {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.contents .cont_box section.cont_main .main_box_mb>.main_item .item_list .item_box>ul>li {
+    margin-bottom: 5px;
+}
+
+.contents .cont_box section.cont_main .main_box_mb>.main_item .item_list .item_box>ul>li:last-child {
+    margin-bottom: 0;
+}
+
+.contents .cont_box section.cont_main .main_box_mb>.main_item .item_list .item_box>ul>li>a>img {
+    display: block;
+    max-width: 100%;
+    width: 200px;
+}
+
+/* contents-baro */
+.contents .cont_box section.link_baro {
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.contents .cont_box section.link_baro ul {
+    margin: 0 -10px;
+}
+
+.contents .cont_box section.link_baro ul>li {
+    display: inline-block;
+    width: calc(33.3333% - 20px);
+    margin: 0 9px;
+}
+
+.contents .cont_box section.link_baro ul>li>a {
+    background: #fff;
+    display: block;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 80px;
+    transition: 0.4s;
+}
+
+.contents .cont_box section.link_baro ul>li>a>span.baro_tit {
+    position: relative;
+    display: block;
+}
+
+.contents .cont_box section.link_baro ul>li>a>span.baro_tit>h4 {
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    transition: 0.4s;
+    color: #212529;
+}
+
+.contents .cont_box section.link_baro ul>li>a>span.baro_tit>h4>p {
+    display: inline-block;
+    color: #ff7e36;
+}
+
+.contents .cont_box section.link_baro ul>li>a>span.baro_tit>i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(https://chaeyeon3241.github.io/carrot_img/logo_icon.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: -2px;
+    right: 0;
+    float: right;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.contents .cont_box section.link_baro ul>li:hover>a {
+    background: #d34c00;
+}
+
+.contents .cont_box section.link_baro ul>li:hover>a>span.baro_tit>h4 {
+    color: #fff;
+}
+
+.contents .cont_box section.link_baro ul>li:hover>a>span.baro_tit>i {
+    background: url(https://chaeyeon3241.github.io/carrot_img/logo_icon_w.png) no-repeat center;
+    background-size: cover;
+}
+
+.contents .cont_box section.link_baro ul>li:first-child>span.down_list {
+    position: absolute;
+    display: none;
+    top: 10px;
+    left: 0;
+    width: 200px;
+    height: 100px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.contents .cont_box section.link_baro ul>li:first-child>span.down_list:after {
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 30px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #fff;
+}
+
+.contents .cont_box section.link_baro ul>li:first-child>span.down_list>a {
+    display: block;
+    width: 100%;
+    height: auto;
+    color: #111;
+    line-height: 1.5;
+    padding: 11px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.contents .cont_box section.link_baro ul>li:first-child>span.down_list>a>img {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 30px;
+    vertical-align: middle;
+}
+
+.contents .cont_box section.link_baro ul>li:first-child.active>span.down_list {
+    display: block;
+}
+
+.contents .cont_box section.link_baro ul>li:first-child.active>a {
+    background: #d34c00;
+}
+
+.contents .cont_box section.link_baro ul>li:first-child.active>a>span.baro_tit>h4 {
+    color: #fff;
+}
+
+.contents .cont_box section.link_baro ul>li:first-child.active>a>span.baro_tit>i {
+    background: url(https://chaeyeon3241.github.io/carrot_img/logo_icon_w.png) no-repeat center;
+    background-size: cover;
+}
+
+@media (max-width: 1100px) {
+    .contents .cont_box {
+        position: relative;
+    }
+
+    .contents .cont_box section.cont_main {
+        margin-bottom: 180px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .contents .cont_box section.cont_main .main_box {
+        display: none;
+    }
+
+    .contents .cont_box section.cont_main .main_box_mb {
+        display: block;
+    }
+}
+
+/* footer */
+footer {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    color: #ffb98b;
+}
+
+footer .ft_box {
+    display: block;
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
+}
+
+footer .ft_box .ft_01 {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+}
+
+footer .ft_box .ft_01 .link {
+    display: inline-block;
+    float: left;
+    margin-top: 8px;
+}
+
+footer .ft_box .ft_01 .link .link_mn {
+    position: relative;
+}
+
+footer .ft_box .ft_01 .link .link_mn>li {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+footer .ft_box .ft_01 .link .link_mn>li:after {
+    content: "";
+    background: #ffb98b;
+    width: 1px;
+    height: 6px;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+footer .ft_box .ft_01 .link .link_mn>li:last-child:after {
+    display: none;
+}
+
+footer .ft_box .ft_01 .s_f {
+    float: right;
+}
+
+footer .ft_box .ft_01 .s_f .sns {
+    display: inline-block;
+    float: left;
+}
+
+footer .ft_box .ft_01 .s_f .sns>a {
+    display: inline-block;
+    float: left;
+    margin-left: 5px;
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+}
+
+footer .ft_box .ft_01 .s_f .sns>a.fbook {
+    background: url(https://chaeyeon3241.github.io/carrot_img/dg_fb_c.png) no-repeat center;
+}
+
+footer .ft_box .ft_01 .s_f .sns>a.insta {
+    background: url(https://chaeyeon3241.github.io/carrot_img/dg_insta_c.png) no-repeat center;
+}
+
+footer .ft_box .ft_01 .s_f .sns>a.blog {
+    background: url(https://chaeyeon3241.github.io/carrot_img/dg_blog_color.png) no-repeat center;
+}
+
+footer .ft_box .ft_01 .s_f .sns>a.fbook:hover {
+    background: url(https://chaeyeon3241.github.io/carrot_img/dg_fb_w.png) no-repeat center;
+}
+
+footer .ft_box .ft_01 .s_f .sns>a.insta:hover {
+    background: url(https://chaeyeon3241.github.io/carrot_img/dg_insta_w.png) no-repeat center;
+}
+
+footer .ft_box .ft_01 .s_f .sns>a.blog:hover {
+    background: url(https://chaeyeon3241.github.io/carrot_img/dg_blog_w.png) no-repeat center;
+}
+
+footer .ft_box .ft_01 .s_f .sns>a>img {
+    display: block;
+}
+
+footer .ft_box .ft_01 .s_f .global {
+    display: inline-block;
+    float: left;
+    margin-left: 15px;
+    margin-top: 5px;
+    position: relative;
+    vertical-align: middle;
+}
+
+footer .ft_box .ft_01 .s_f .global>img {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+}
+
+footer .ft_box .ft_01 .s_f .global>select.global_list {
+    box-sizing: border-box;
+    border: 2px solid #ffb98b;
+    border-radius: 5px;
+    margin-left: 10px;
+    text-decoration: underline;
+    text-underline-position: under;
+    vertical-align: top;
+    background: #ff7e36;
+    color: #fff;
+    font-family: "Jua", sans-serif;
+    font-size: 16px;
+    line-height: 35px;
+    padding: 7px;
+}
+
+footer .ft_box .ft_02 {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    border-top: 1px solid #ffb98b;
+}
+
+footer .ft_box .ft_02 section.contact {
+    display: block;
+}
+
+footer .ft_box .ft_02 section.contact>li {
+    display: inline-block;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+footer .ft_box .ft_02 section.contact>li:first-child {
+    margin-left: 0;
+}
+
+footer .ft_box .ft_02 section.contact>li:after {
+    content: "";
+    background: #ffb98b;
+    width: 1px;
+    height: 6px;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+footer .ft_box .ft_02 section.contact>li:last-child:after {
+    display: none;
+}
+
+footer .ft_box .ft_02 section.contact>li>span {
+    font-size: 18px;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+footer .ft_box .ft_02 section.contact>li>span:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+footer .ft_box .ft_02 section.tit {
+    display: inline-block;
+    width: 100%;
+}
+
+footer .ft_box .ft_02 section.tit>span {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer .ft_box .ft_02 section.tit>span:last-child {
+    margin-right: 0;
+}
+
+footer .ft_box .ft_02 section.copy {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+}
+
+footer .ft_box .ft_02 section.ft_logo {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -20px;
+}
+
+footer .ft_box_bt {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+footer .ft_box_bt .bt_01 {
+    display: block;
+    width: 100%;
+}
+
+footer .ft_box_bt .bt_02 {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 1100px) {
+    .contents .cont_box section.link_baro ul {
+        margin: 0;
+    }
+
+    .contents .cont_box section.link_baro ul>li {
+        display: inline-block;
+        width: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .contents .cont_box section.link_baro ul>li>a {
+        background: #fff;
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+
+    .contents .cont_box section.link_baro ul>li>a:last-child {
+        margin-bottom: 0;
+    }
+
+    .contents .cont_box section.link_baro ul>li>a>span.baro_tit>h4 {
+        text-align: left;
+        font-size: 22px;
+    }
+
+    .contents .cont_box section.link_baro ul>li>a>span.baro_tit>i {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contents .cont_box section.link_baro ul>li:first-child>span.down_list {
+        position: relative;
+        margin-top: -20px;
+        margin-left: 25px;
+    }
+
+    .contents .cont_box section.link_baro ul>li:first-child>span.down_list:after {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .ft_box .ft_01 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .ft_box .ft_02 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .ft_box .ft_02>section {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    footer .ft_box .ft_02>section.ft_logo {
+        position: relative;
+        margin-top: 10px;
+    }
+}

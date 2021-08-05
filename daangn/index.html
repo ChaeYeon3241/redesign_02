@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장채연 디자이너, 당근마켓 사이트 리디자인 작업물</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div class="hd_box">
+            <h1 class="logo">
+                <a href="#"><img
+                        src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/header/logo-basic-24b18257ac4ef693c02233bf21e9cb7ecbf43ebd8d5b40c24d99e14094a44c81.svg"
+                        alt="당근마켓 로고"></a>
+            </h1>
+            <div class="hd_tit">
+                <h2>당신 근처의 당근마켓</h2>
+            </div>
+            <div class="search-container">
+                <i id="search-btn" class="fa fa-search fa-2x" aria-hidden="true"></i>
+                <input type="text" id="search" placeholder="" autocomplete="off">
+                <p id="tip">Hit enter to search</p>
+            </div>
+        </div>
+    </header>
+    <div class="contents">
+        <div class="cont_box">
+            <section class="cont_main">
+                <div class="main_box">
+                    <div class="main_item main_01">
+                        <div class="item_tit">
+                            <h3>당신 근처의<br>당근마켓</h3>
+                        </div>
+                        <div class="item_list">
+                            <div class="item_box">
+                                <ul>
+                                    <li><a href="#"><img src="https://chaeyeon3241.github.io/carrot_img/sub_01_b.png"
+                                                alt="동네확인하기"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_item main_02">
+                        <div class="item_tit">
+                            <h3>이웃과 함께하는<br>동네생활</h3>
+                        </div>
+                        <div class="item_list">
+                            <div class="item_box">
+                                <ul>
+                                    <li><a href="#"><img src="https://chaeyeon3241.github.io/carrot_img/sub_02_b.png"
+                                                alt="우리동네질문"></a></li>
+                                    <li><a href="#"><img src="https://chaeyeon3241.github.io/carrot_img/sub_03_b.png"
+                                                alt="동네분실센터"></a></li>
+                                    <li><a href="#"><img src="https://chaeyeon3241.github.io/carrot_img/sub_04_b.png"
+                                                alt="동네모임"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_item main_03">
+                        <div class="item_tit">
+                            <h3>내 근처에서 찾는<br>동네가게</h3>
+                        </div>
+                        <div class="item_list">
+                            <div class="item_box">
+                                <ul>
+                                    <li><a href="#"><img src="https://chaeyeon3241.github.io/carrot_img/sub_05_b.png"
+                                                alt="동네가게찾기"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_item main_04">
+                        <div class="item_tit">
+                            <h3>중고거래<br>인기매물</h3>
+                        </div>
+                        <div class="item_list">
+                            <div class="item_box">
+                                <ul>
+                                    <li><a href="#"><img src="https://chaeyeon3241.github.io/carrot_img/sub_06_b.png"
+                                                alt="인기매물더보기"></a></li>
+                                    <li><a href="#"><img src="https://chaeyeon3241.github.io/carrot_img/sub_07_b.png"
+                                                alt="믿을수있어요"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_item main_05">
+                        <div class="item_tit">
+                            <h3>자주 묻는 질문</h3>
+                        </div>
+                        <div class="item_list">
+                            <div class="item_box">
+                                <ul>
+                                    <li><a href="#"><img src="https://chaeyeon3241.github.io/carrot_img/sub_08_b.png"
+                                                alt="문의하기"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_item main_06">
+                        <div class="item_tit">
+                            <h3>광고주 센터</h3>
+                        </div>
+                        <div class="item_list">
+                            <div class="item_box">
+                                <ul>
+                                    <li><a href="#"><img src="https://chaeyeon3241.github.io/carrot_img/sub_09_b.png"
+                                                alt="광고주센터로그인"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_box_mb">
+                    <div class="main_item main_01">
+                        <div class="item_tit">
+                            <h3>당신 근처의 당근마켓</h3>
+                        </div>
+                        <div class="item_list">
+                            <div class="item_box">
+                                <ul>
+                                    <li><a href="#"><img src="https://chaeyeon3241.github.io/carrot_img/sub_01_b.png"
+                                                alt="동네확인하기"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_item main_02">
+                        <div class="item_tit">
+                            <h3>이웃과 함께하는 동네생활</h3>
+                        </div>
+                        <div class="item_list">
+                            <div class="item_box">
+                                <ul>
+                                    <li><a href="#"><img src="https://chaeyeon3241.github.io/carrot_img/sub_02_b.png"
+                                                alt="우리동네질문"></a></li>
+                                    <li><a href="#"><img src="https://chaeyeon3241.github.io/carrot_img/sub_03_b.png"
+                                                alt="동네분실센터"></a></li>
+                                    <li><a href="#"><img src="https://chaeyeon3241.github.io/carrot_img/sub_04_b.png"
+                                                alt="동네모임"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_item main_03">
+                        <div class="item_tit">
+                            <h3>내 근처에서 찾는 동네가게</h3>
+                        </div>
+                        <div class="item_list">
+                            <div class="item_box">
+                                <ul>
+                                    <li><a href="#"><img src="https://chaeyeon3241.github.io/carrot_img/sub_05_b.png"
+                                                alt="동네가게찾기"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_item main_04">
+                        <div class="item_tit">
+                            <h3>중고거래 인기매물</h3>
+                        </div>
+                        <div class="item_list">
+                            <div class="item_box">
+                                <ul>
+                                    <li><a href="#"><img src="https://chaeyeon3241.github.io/carrot_img/sub_06_b.png"
+                                                alt="인기매물더보기"></a></li>
+                                    <li><a href="#"><img src="https://chaeyeon3241.github.io/carrot_img/sub_07_b.png"
+                                                alt="믿을수있어요"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_item main_05">
+                        <div class="item_tit">
+                            <h3>자주 묻는 질문</h3>
+                        </div>
+                        <div class="item_list">
+                            <div class="item_box">
+                                <ul>
+                                    <li><a href="#"><img src="https://chaeyeon3241.github.io/carrot_img/sub_08_b.png"
+                                                alt="문의하기"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_item main_06">
+                        <div class="item_tit">
+                            <h3>광고주 센터</h3>
+                        </div>
+                        <div class="item_list">
+                            <div class="item_box">
+                                <ul>
+                                    <li><a href="#"><img src="https://chaeyeon3241.github.io/carrot_img/sub_09_b.png"
+                                                alt="광고주센터로그인"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="link_baro">
+                <div class="baro_box">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="baro_tit">
+                                    <h4>다운로드</h4>
+                                    <i></i>
+                                </span>
+                            </a>
+                            <span class="down_list">
+                                <a href="#"><img
+                                        src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/header/apple-store-3a664174124650d63cae365bc55586fc5ff27b822b1b97788fc4af77d73d00c8.svg"
+                                        alt="앱스토어아이콘"> App store</a>
+                                <a href="#"><img
+                                        src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/header/google-play-c9ad0fc573cd01e2b982df5de6709a3d8d7cec8d9b58a5c08db7da0b92a32a75.svg"
+                                        alt="구글플레이아이콘"> Google Play</a>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="baro_tit">
+                                    <h4>당근채팅 <p>Beta</p>
+                                    </h4>
+                                    <i></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="ft_box">
+            <div class="ft_01">
+                <section class="link">
+                    <ul class="link_mn">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">채용</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">위치기반서비스 이용약관</a></li>
+                    </ul>
+                </section>
+                <section class="s_f">
+                    <ul class="sns">
+                        <a href="#" class="fbook"></a>
+                        <a href="#" class="insta"></a>
+                        <a href="#" class="blog"></a>
+                    </ul>
+                    <ul class="global">
+                        <img src="https://chaeyeon3241.github.io/carrot_img/icon_global_color.png" width="35"
+                            height="35">
+                        <select id="global-links-select" class="global_list">
+                            <option value="kr">한국</option>
+                            <option value="#">영국</option>
+                            <option value="#">캐나다</option>
+                            <option value="#">미국</option>
+                            <option value="#">일본</option>
+                        </select>
+                    </ul>
+                </section>
+            </div>
+            <div class="ft_02">
+                <section class="contact">
+                    <li>고객문의 <span>cs@daangnservice.com</span></li>
+                    <li>제휴문의 <span>contact@daangn.com</span></li>
+                    <li>지역광고 <span>ad@daangn.com</span></li>
+                    <li>PR문의 <span>pr@daangn.com</span></li>
+                </section>
+                <section class="tit">
+                    <span>서울특별시 구로구 디지털로 30길 28 609호 (당근서비스) </span>
+                    <span>사업자 등록번호 : 375-87-00088</span>
+                    <span>직업정보제공사업 신고번호 : J1200020200016</span>
+                </section>
+                <section class="copy">©Danggeun Market Inc.</section>
+                <section class="ft_logo">
+                    <img src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/footer/logo-a4f4848ffd1d5fcb13d1d3ecf82ffbc77c31ebe226f67097386497a34638c059.svg"
+                        alt="footer_logo" class="ft_logo">
+                </section>
+            </div>
+        </div>
+        <div class="ft_box_bt">
+            <img src="https://chaeyeon3241.github.io/carrot_img/ft_img_q.png" alt="당근이세요이미지" class="bt_01">
+            <img src="https://chaeyeon3241.github.io/carrot_img/ft_img_ch.png" alt="캐릭터이미지" class="bt_02">
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
